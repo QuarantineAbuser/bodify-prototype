@@ -1,0 +1,143 @@
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark">
+<header>
+    <nav class="navbar navbar-expand-md bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="exercises.html">BODIFY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navBarsExampleDefault" aria-controls="navBarsExampleDefault"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-end" id="navBarsExampleDefault">
+                <ul class="nav nav-tabs m-auto">
+                    <li class="nav-item m-auto">
+                        <a class="nav-link" href="exercises.html">EXERCISES</a>
+                    </li>
+                    <li class="nav-item m-auto">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a id="userProfileLink" href="#" class="text-decoration-none"> Welcome, user!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="row pt-2 pb-2 bg-warning">
+    <div class="container align-middle">
+        <h3 class="jumbotron-heading text-center font-weight-bolder">REGISTER</h3>
+    </div>
+</div>
+<div class="container main-container mt-4 text-white">
+    <form class="form-signin mt-xl-5" method="POST" action="#">
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control"
+                   placeholder="Username" required autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control"
+                   placeholder="Password" required>
+        </p>
+        <p>
+            <label for="repeatedPassword" class="sr-only">Repeat Password</label>
+            <input type="password" id="repeatedPassword" name="repeatedPassword" class="form-control"
+                   placeholder="Repeat Password" required>
+        </p>
+        <p>
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" name="name" class="form-control"
+                   placeholder="Name" required>
+        </p>
+        <p>
+            <label for="surname" class="sr-only">Surname</label>
+            <input type="text" id="surname" name="surname" class="form-control"
+                   placeholder="Surname" required>
+        </p>
+        <p>
+            <label for="age" class="sr-only">Age</label>
+            <input type="text" id="age" name="age" class="form-control"
+                   placeholder="Age" required>
+        </p>
+        <p>
+            <label for="city" class="sr-only">City</label>
+            <input type="text" id="city" name="city" class="form-control"
+                   placeholder="City" required>
+        </p>
+        <p>
+            <label for="phoneNumber" class="sr-only">Phone number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" class="form-control"
+                   placeholder="Phone number" required>
+        </p>
+        <p>
+            <label for="creditCardNumber" class="sr-only">Credit card number</label>
+            <input type="text" id="creditCardNumber" name="creditCardNumber" class="form-control"
+                   placeholder="Credit card number" required>
+        </p>
+		<p>
+            <label for="creditCardCCV" class="sr-only">CCV</label>
+            <input type="text" id="creditCardNumber" name="creditCardNumber" class="form-control"
+                   placeholder="CCV" required>
+        </p>
+		<p>
+            <label for="creditCardExpDate" class="sr-only">Credit card expiration date</label>
+            <input type="text" id="creditCardExpDate" name="creditCardExpDate" class="form-control"
+                   placeholder="Credit card expiration date" required>
+        </p>
+        <div class="input-group-append btn-group btn-group-lg w-100" role="group">
+            <input class="btn-check" name="sex" type="radio" id="MALE" value="MALE" checked="true">
+            <label class="btn btn-outline-warning shadow-none" for="MALE">Male</label>
+            <input class="btn-check" name="sex" type="radio" id="FEMALE" value="FEMALE">
+            <label class="btn btn-outline-warning shadow-none" for="FEMALE">Female</label>
+        </div>
+        <button class="btn btn-lg d-block w-100 btn-outline-warning mt-2" type="submit">Sign up</button>
+    </form>
+    <a href="login.html" class="btn btn-lg d-block btn-light w-auto mb-2 pb-2 mt-1 button-hover">
+        Already have an account? Login here!</a>
+</div>
+<footer class="text-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h5 class="text-warning">Made by</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0 text-white">
+                    Stefan Mitrevski, 195091
+                </p>
+            </div>
+            <div class="col-6 position-relative">
+                <div class="dropdown mt-2 d-inline w-auto position-absolute settings">
+                    <button class="btn dropdown-toggle btn-warning border-dark" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Settings
+                    </button>
+                    <ul class="dropdown-menu bg-warning border-dark" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item btn btn-sm btn-light footer-buttons w-100"
+                               href="#">
+                            <span class="fa fa-shopping-cart">Logout</span>
+                        </a></li>
+                        <li><a class="dropdown-item btn btn-sm btn-light footer-buttons w-100"
+                               href="register.html">
+                            <span class="fa fa-shopping-cart">Register</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
